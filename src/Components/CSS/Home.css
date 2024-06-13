@@ -1,0 +1,20 @@
+.head-contaner img{
+    height: 500px;
+    position: relative;
+}
+.head-contaner .shoes-img{
+    height: 400px;
+    position: absolute;
+    top: 85px;
+    right: 150px;
+}
+.first-title{
+    position: absolute;
+    top: 99px;
+    left: -442px;
+}
+.first-title h3{
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(231, 44, 88);
+}
