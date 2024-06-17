@@ -64,7 +64,7 @@ const Home = () => {
                 <Row>
                     <Col md={4}>
                         <Card>
-                            <Card.Img variant="top" src="./1.jpg" />
+                            <Card.Img variant="top" src="./6.jpg" />
                             <Card.Body>
                                 <Card.Title>Product 1</Card.Title>
                                 <Card.Text>
@@ -76,7 +76,7 @@ const Home = () => {
                     </Col>
                     <Col md={4}>
                         <Card>
-                            <Card.Img variant="top" src="./2.jpg" />
+                            <Card.Img variant="top" src="./8.jpg" />
                             <Card.Body>
                                 <Card.Title>Product 2</Card.Title>
                                 <Card.Text>

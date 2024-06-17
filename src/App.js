@@ -8,6 +8,12 @@ import Home from './Components/Pages/Home';
 import Collections from './Components/Pages/Collections';
 import ContactUs from './Components/Pages/ContactUs';
 import AboutUs from './Components/Pages/AboutUs';
+import Cart from './Components/Pages/Cart';
+import { Navbar } from 'react-bootstrap';
+import Footer from './Components/Pages/Footer';
+// import Footer from './Components/Pages/Footer';
+
+
 //import Images from './public/shoes.png';
 
 function App() {
@@ -19,6 +25,10 @@ function App() {
           <Route path="/collections" element={<Collections/>}/>
           <Route path="/contactus" element={<ContactUs/>}/>
           <Route path="/aboutus" element={<AboutUs/>}/>
+          <Route path="/" element={<Footer/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/navbar" element={<Navbar/>}/>
+          
 
         </Route>
       </Routes>

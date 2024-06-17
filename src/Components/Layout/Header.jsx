@@ -16,6 +16,7 @@ const Header = () => {
           <li><a href="/collections">COLLECTIONS</a></li>
           <li><a href="/aboutus">ABOUT US</a></li>
           <li><a href="/contactus">CONTACT US</a></li>
+          
         </ul>
       </nav>
       <div className="header__search">
