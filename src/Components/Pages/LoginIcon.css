@@ -1,0 +1,52 @@
+/* LoginIcon.css */
+.login-icon {
+    cursor: pointer;
+  }
+  
+  .login-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .login-icon img:hover {
+    opacity: 0.8;
+  }
+  
+  /* Header.css */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .header .logo h1 {
+    margin: 0;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    display: inline;
+  }
+  
+  .header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header .icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  

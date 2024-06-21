@@ -1,0 +1,54 @@
+/* Clock.css */
+
+.clock__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(225, 38, 38, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .clock__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clock__data .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clock__data .text-center h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .clock__data .text-center h5 {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .fs-3 {
+    font-size: 2rem;
+  }
+  
+  .fs-6 {
+    font-size: 1rem;
+  }
+  
+  span.text-white.fs-3 {
+    font-size: 2.5rem;
+    margin: 0 10px;
+  }
+  
