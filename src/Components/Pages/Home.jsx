@@ -23,9 +23,10 @@ const Home = () => {
                     />
                     <img
                         className="d-block shoes-img "
-                        src="./shoes.png"
+                        src="./shoes2.png"
                         alt="First slide"
                     />
+                    
                 
                     <Carousel.Caption className='first-title'>
                         <h3>Welcome to Footwear Store</h3>
@@ -40,8 +41,8 @@ const Home = () => {
                     <Row>
                         <Col lg="6" md="12" className='count__down-col'>
                             <div className="clock__top-content">
-                                <h3 className="text-black fs-6 mb-2">Limited offers</h3>
-                                <h3 className="text-black fs-5 mb-3">SNEAKERS</h3>
+                                <h4 className="text-black fs-3 mb-2">Limited offers Sneakers</h4>
+                                {/* <h3 className="text-black fs-5 mb-3">SNEAKERS</h3> */}
                             </div>
                             <Clock />
 
@@ -53,7 +54,7 @@ const Home = () => {
                             </motion.button>
                         </Col>
 
-                        <Col lg="6" md="12" className="text-end counter__img">
+                        <Col lg="2" md="8" className="text-end counter__img">
                             <img src={'./Image7.png'} alt="" />
                         </Col>
                     </Row>
@@ -92,6 +93,42 @@ const Home = () => {
                             <Card.Img variant="top" src="2.jpg.jpg" />
                             <Card.Body>
                                 <Card.Title>Product 3</Card.Title>
+                                <Card.Text>
+                                    This is a brief description of Product 3.
+                                </Card.Text>
+                                <Button variant="primary">Buy Now</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card>
+                            <Card.Img variant="top" src="9.jpg" />
+                            <Card.Body>
+                                <Card.Title>Product 4</Card.Title>
+                                <Card.Text>
+                                    This is a brief description of Product 3.
+                                </Card.Text>
+                                <Button variant="primary">Buy Now</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card>
+                            <Card.Img variant="top" src="10.jpg" />
+                            <Card.Body>
+                                <Card.Title>Product 5</Card.Title>
+                                <Card.Text>
+                                    This is a brief description of Product 3.
+                                </Card.Text>
+                                <Button variant="primary">Buy Now</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card>
+                            <Card.Img variant="top" src="11.jpg" />
+                            <Card.Body>
+                                <Card.Title>Product 6</Card.Title>
                                 <Card.Text>
                                     This is a brief description of Product 3.
                                 </Card.Text>

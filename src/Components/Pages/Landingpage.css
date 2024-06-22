@@ -55,7 +55,7 @@ body{
     margin: 0px 40px 20px 0px;
     font-weight: bolder;
 } */
-.title-button button,.login-signin button {
+.title-button button,.login-signin button,.visit-store button {
     background: linear-gradient(to right, #6a11cb, #fc2525);
     color: white;
     padding: 5px 40px;
@@ -69,4 +69,28 @@ body{
 button:hover {
     background: linear-gradient(to right, #5a0eb7, #1f63e2);
 }
+.video-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(7, 7, 7);
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    overflow: auto;
+    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
+  }
+  
+  .video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Ensure the overlay is beneath the video popup */
+  }
 
