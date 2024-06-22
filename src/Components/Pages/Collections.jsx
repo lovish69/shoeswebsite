@@ -608,7 +608,7 @@ const Collections = () => {
                     <div key={id} className="product-card">
                       <img src={product.image} alt={product.name} className="product-image" />
                       <p>{product.name}</p>
-                      <p>${product.price}</p>
+                      <p>&#8377;{product.price}</p>
                       <button className="cart-button" onClick={() => handleAddToCart(product)}>
                         <i className="fas fa-cart-plus"></i> Add to Cart
                       </button>

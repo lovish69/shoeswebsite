@@ -23,14 +23,14 @@ const Cart = () => {
                 <img src={item.image} alt={item.name} className="cart-item-image" />
                 <div className="cart-item-details">
                   <h2>{item.name}</h2>
-                  <p>${item.price}</p>
+                  <p>&#8377;{item.price}</p>
                   <button onClick={() => removeFromCart(item)} className="remove-button">Remove</button>
                 </div>
               </li>
             ))}
           </ul>
           <div className="cart-summary">
-            <h3>Total: ${getTotal()}</h3>
+            <h3>Total: &#8377;{getTotal()}</h3>
             <button className="checkout-button">Proceed to Checkout</button>
           </div>
         </div>
