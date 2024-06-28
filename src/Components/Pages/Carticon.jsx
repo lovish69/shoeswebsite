@@ -14,7 +14,7 @@ const Carticon = () => {
 
   return (
     <div className="cart-icon-container" onClick={handleCartClick}>
-      <FontAwesomeIcon icon={faShoppingCart} size="1.5x" />
+      <FontAwesomeIcon icon={faShoppingCart} size="1x" />
     </div>
   );
 };

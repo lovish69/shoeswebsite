@@ -78,9 +78,15 @@ const ContactUs = () => {
                 <p><strong>Business Hours:</strong> Mon - Fri: 9am - 6pm, Sat: 10am - 4pm, Sun: Closed</p>
                 <div className="social-media">
                     <h4>Follow Us</h4>
-                    <a href="#" className="social-link"><FaFacebook /></a>
-                    <a href="#" className="social-link"><FaTwitter /></a>
-                    <a href="#" className="social-link"><FaInstagram /></a>
+                    <a href="https://www.facebook.com/yourprofile" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <FaFacebook />
+                    </a>
+                    <a href="https://www.twitter.com/yourprofile" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <FaTwitter />
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram />
+                    </a>
                 </div>
             </div>
             <div className="faq-section">

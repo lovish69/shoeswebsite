@@ -1,86 +1,105 @@
-/* src/Header.css */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-  }
-  .header__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header__logo img{
-    border: none;
-    border-radius: 41px;
-    margin-right: 9px;
-  }
-  .header__logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.9em;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: bolder;
-  }
-  
-  .header__nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 0%;
-  }
-  
-  .header__nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1em;
-  }
-  
-  .header__nav a:hover {
-    color: #ff6347; /* Tomato color for hover effect */
-  }
-  
-  .header__search {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header__search input {
-    padding: 5px;
-    font-size: 1em;
-  }
-  
-  .header__search button {
-    padding: 5px 10px;
-    margin-left: 10px;
-    background-color: #ff6347; /* Tomato color for button */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .header__search button:hover {
-    background-color: #ff4500; /* Darker tomato color for hover effect */
-  }
-  
-/* body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-image: url('/');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  .header {
-    text-align: center;
-  }
-  
-   */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 80px; /* Adjust as needed */
+  border: none;
+  border-radius: 41px;
+  margin-right: 10px; /* Adjust spacing */
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.9em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust spacing between nav items */
+  margin: 0;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+.header__nav a:hover {
+  color: #ff6347; /* Tomato color for hover effect */
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search input {
+  padding: 8px; /* Adjust padding */
+  font-size: 1em;
+}
+
+.header__search button {
+  padding: 8px 12px; /* Adjust padding */
+  margin-left: 10px; /* Adjust spacing */
+  background-color: #ff6347; /* Tomato color for button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.header__search button:hover {
+  background-color: #ff4500; /* Darker tomato color for hover effect */
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.header__icons > * {
+  margin-left: 10px; /* Adjust spacing between icons */
+  color: #fff;
+  font-size: 1.5em; /* Adjust icon size */
+  text-decoration: none;
+  position: relative;
+}
+
+.header__icons > *:hover {
+  color: #ff6347; /* Change icon color on hover */
+}
+
+.wishlist-count {
+  position: absolute;
+  top: -10px; /* Adjust vertical position */
+  right: -10px; /* Adjust horizontal position */
+  background-color: #ff6347; /* Tomato color for count background */
+  color: #fff;
+  font-size: 0.8em; /* Adjust font size */
+  padding: 2px 6px; /* Adjust padding */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px; /* Ensure it's a circle even with single digits */
+  height: 20px; /* Ensure it's a circle even with single digits */
+  line-height: 1; /* Adjust line height */
+}
