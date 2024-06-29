@@ -102,6 +102,13 @@ const AboutUs = () => {
             imageUrl: './3.jpg',
             description: 'Noopur manages the day-to-day operations, ensuring everything runs smoothly and efficiently.',
         },
+        {
+            id: 5,
+            name: 'Honey',
+            role: 'Director',
+            imageUrl: './avatar.png',
+            description: 'Honey manages the day-to-day operations, ensuring everything runs smoothly and efficiently.',
+        },
     ];
 
     return (
