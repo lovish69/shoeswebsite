@@ -97,7 +97,8 @@ import ShippingInfo from './Explore/ShippingInfo';
 import StorePickup from './Explore/StorePickup';
 import ReturnExchange from './Explore/Return';
 import { CartProvider } from './Components/Pages/CartContext';
-import { WishlistProvider } from './Components/Pages/WishlistContext'; // Ensure the correct path
+import { WishlistProvider } from './Components/Pages/WishlistContext';
+//import { WishlistProvider } from './Components/Pages/WishlistContext'; // Ensure the correct path
 
 function App() {
   return (

@@ -35,6 +35,7 @@ const Home = () => {
                 </Carousel.Item>
                 {/* Add more Carousel.Item as needed */}
             </Carousel>
+
             
             <section className="timer__count">
                 <Container>
@@ -54,7 +55,7 @@ const Home = () => {
                             </motion.button>
                         </Col>
 
-                        <Col lg="2" md="8" className="text-end counter__img">
+                        <Col lg="2" md="3" className="text-end counter__img">
                             <img src={'./Image7.png'} alt="" />
                         </Col>
                     </Row>

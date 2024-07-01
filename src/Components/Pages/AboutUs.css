@@ -73,8 +73,8 @@
 } */
 .about-us-container {
     padding: 40px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #fbf9f9;
+    color: #000; /* Set the default text color to black */
 }
 
 .about-us-title {
@@ -88,6 +88,7 @@
     font-size: 1.2em;
     margin-bottom: 30px;
     text-align: center;
+    color: #000; /* Ensure mission text is black */
 }
 
 .about-us-history,
@@ -106,6 +107,7 @@
 .about-us-values ul {
     font-size: 1.1em;
     line-height: 1.6;
+    color: #000; /* Ensure history and values text is black */
 }
 
 .about-us-values ul {
@@ -115,6 +117,7 @@
 
 .about-us-values li {
     margin-bottom: 10px;
+    color: #000; /* Ensure list items are black */
 }
 
 .team-section {
@@ -135,13 +138,14 @@
 }
 
 .team-member {
-    background-color: #fff;
+    background-color: #ebe8e8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
     text-align: center;
     width: 250px;
+    color: #000; /* Ensure team member text is black */
 }
 
 .team-member img {

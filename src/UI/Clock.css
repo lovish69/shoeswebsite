@@ -6,8 +6,8 @@
   align-items: center;
   gap: 15px;
   padding: 20px;
-  background-color: #bf5050;
-  border-radius: 10px;
+  /* background-color: #f7f3f3; */
+  border-radius: 15px;
 }
 
 .clock__data {
@@ -24,7 +24,7 @@
 }
 
 .text-white {
-  color: #fff;
+  color: #b27a7a;
 }
 
 .fs-3 {
@@ -41,4 +41,28 @@
 
 .gap-3 {
   gap: 0.75rem;
+}
+.text-black {
+  color: black !important;
+}
+
+.clock__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.clock__data {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.clock__data .text-center h1,
+.clock__data .text-center h5 {
+  color: black !important; /* Ensure the color is applied */
+}
+
+.clock__data span {
+  color: black !important; /* Ensure the colon is also black */
 }

@@ -44,6 +44,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+  color: #0e0d0d; /* Set font color to black */
 }
 
 .login-button {
@@ -52,7 +53,7 @@ body {
   background-color: #ff7e5f;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #0e0d0d; /* Set font color to black */
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;

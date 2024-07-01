@@ -1,20 +1,22 @@
-/* src/Components/Pages/ContactUs.css */
 .contact-us-container {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    color: #000; /* Set default text color to black */
 }
 
 .contact-us-title {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
+    color: #000; /* Ensure title text is black */
 }
 
 .contact-us-description {
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: center;
+    color: #000; /* Ensure description text is black */
 }
 
 .contact-form {
@@ -29,6 +31,7 @@
 .form-label {
     font-size: 1rem;
     margin-bottom: 5px;
+    color: #000; /* Ensure label text is black */
 }
 
 .form-control {
@@ -36,6 +39,7 @@
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: #000; /* Ensure input text is black */
 }
 
 .submit-button {
@@ -56,24 +60,29 @@
 .contact-info {
     margin-top: 40px;
     text-align: center;
+    color: #000; /* Ensure contact info text is black */
 }
 
 .contact-info h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    color: #000; /* Ensure contact info header text is black */
 }
 
 .contact-info p {
     margin-bottom: 10px;
+    color: #000; /* Ensure contact info paragraph text is black */
 }
 
 .social-media {
     margin-top: 20px;
+    color: #000; /* Ensure social media text is black */
 }
 
 .social-media h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #000; /* Ensure social media header text is black */
 }
 
 .social-link {
@@ -89,6 +98,7 @@
 
 .faq-section {
     margin-top: 40px;
+    color: #000; /* Ensure FAQ section text is black */
 }
 
 .faq-item {
@@ -98,6 +108,7 @@
 .faq-item h4 {
     font-size: 1.2rem;
     margin-bottom: 5px;
+    color: #000; /* Ensure FAQ item header text is black */
 }
 
 .map-container {
