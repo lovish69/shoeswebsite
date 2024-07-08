@@ -184,6 +184,7 @@ button:hover {
         padding: 10px;
     }
 }
+
 .head-container img {
     width: 100%;
     max-width: 100%;
@@ -199,3 +200,28 @@ button:hover {
     right: 0; /* Adjust as needed */
 }
 
+/* Media Queries for Shoes Image */
+
+@media (max-width: 1200px) {
+    .head-container .shoes-img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .head-container .shoes-img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-container .shoes-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .head-container .shoes-img {
+        width: 40%;
+    }
+}

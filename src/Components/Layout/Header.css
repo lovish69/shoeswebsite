@@ -103,3 +103,134 @@
   height: 20px; /* Ensure it's a circle even with single digits */
   line-height: 1; /* Adjust line height */
 }
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .header__logo img {
+    height: 70px; /* Adjust as needed */
+  }
+
+  .header__logo a {
+    font-size: 1.7em;
+  }
+
+  .header__nav ul {
+    gap: 15px; /* Adjust spacing between nav items */
+  }
+
+  .header__search input {
+    padding: 7px; /* Adjust padding */
+    font-size: 0.9em;
+  }
+
+  .header__search button {
+    padding: 7px 10px; /* Adjust padding */
+  }
+
+  .header__icons > * {
+    font-size: 1.4em; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 992px) {
+  .header__logo img {
+    height: 60px; /* Adjust as needed */
+  }
+
+  .header__logo a {
+    font-size: 1.5em;
+  }
+
+  .header__nav ul {
+    gap: 10px; /* Adjust spacing between nav items */
+  }
+
+  .header__search input {
+    padding: 6px; /* Adjust padding */
+    font-size: 0.8em;
+  }
+
+  .header__search button {
+    padding: 6px 8px; /* Adjust padding */
+  }
+
+  .header__icons > * {
+    font-size: 1.3em; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header__logo {
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .header__logo img {
+    height: 50px; /* Adjust as needed */
+  }
+
+  .header__logo a {
+    font-size: 1.3em;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    gap: 5px; /* Adjust spacing between nav items */
+  }
+
+  .header__search input {
+    padding: 5px; /* Adjust padding */
+    font-size: 0.7em;
+  }
+
+  .header__search button {
+    padding: 5px 7px; /* Adjust padding */
+  }
+
+  .header__icons {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .header__icons > * {
+    font-size: 1.2em; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 576px) {
+  .header__logo img {
+    height: 40px; /* Adjust as needed */
+  }
+
+  .header__logo a {
+    font-size: 1.1em;
+  }
+
+  .header__nav a {
+    font-size: 0.9em;
+  }
+
+  .header__search input {
+    padding: 4px; /* Adjust padding */
+    font-size: 0.6em;
+  }
+
+  .header__search button {
+    padding: 4px 6px; /* Adjust padding */
+  }
+
+  .header__icons > * {
+    font-size: 1em; /* Adjust icon size */
+  }
+
+  .wishlist-count {
+    font-size: 0.7em; /* Adjust font size */
+    min-width: 18px; /* Ensure it's a circle even with single digits */
+    height: 18px; /* Ensure it's a circle even with single digits */
+  }
+}

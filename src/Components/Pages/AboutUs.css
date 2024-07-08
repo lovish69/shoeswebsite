@@ -183,3 +183,147 @@
 .social-link:hover {
     color: #d81b1b;
 }
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .about-us-title {
+        font-size: 2.2em;
+    }
+
+    .about-us-mission {
+        font-size: 1.1em;
+    }
+
+    .about-us-history h2,
+    .about-us-values h2 {
+        font-size: 1.6em;
+    }
+
+    .about-us-history p,
+    .about-us-values ul {
+        font-size: 1em;
+    }
+
+    .team-title {
+        font-size: 1.8em;
+    }
+
+    .team-member {
+        width: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us-container {
+        padding: 30px;
+    }
+
+    .about-us-title {
+        font-size: 2em;
+    }
+
+    .about-us-mission {
+        font-size: 1em;
+    }
+
+    .about-us-history h2,
+    .about-us-values h2 {
+        font-size: 1.4em;
+    }
+
+    .about-us-history p,
+    .about-us-values ul {
+        font-size: 0.9em;
+    }
+
+    .team-title {
+        font-size: 1.6em;
+    }
+
+    .team-member {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .team-member img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 20px;
+    }
+
+    .about-us-title {
+        font-size: 1.8em;
+    }
+
+    .about-us-mission {
+        font-size: 0.9em;
+    }
+
+    .about-us-history h2,
+    .about-us-values h2 {
+        font-size: 1.2em;
+    }
+
+    .about-us-history p,
+    .about-us-values ul {
+        font-size: 0.8em;
+    }
+
+    .team-title {
+        font-size: 1.4em;
+    }
+
+    .team-member {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us-container {
+        padding: 10px;
+    }
+
+    .about-us-title {
+        font-size: 1.5em;
+    }
+
+    .about-us-mission {
+        font-size: 0.8em;
+    }
+
+    .about-us-history h2,
+    .about-us-values h2 {
+        font-size: 1em;
+    }
+
+    .about-us-history p,
+    .about-us-values ul {
+        font-size: 0.7em;
+    }
+
+    .team-title {
+        font-size: 1.2em;
+    }
+
+    .team-member {
+        width: 150px;
+        padding: 5px;
+    }
+
+    .team-member img {
+        width: 70px;
+        height: 70px;
+    }
+}

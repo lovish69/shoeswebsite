@@ -169,8 +169,18 @@ body {
     margin-bottom: 10px;
 }
 
-/* Media Queries for Responsiveness */
+/* Alert Center */
+.alert-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    width: 300px;
+    text-align: center;
+}
 
+/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .head-contaner img {
         height: 400px;
@@ -298,15 +308,51 @@ body {
         font-size: 14px;
         padding: 8px 16px;
     }
+
+    .alert-center {
+        width: 250px;
+    }
 }
-/* Home.css */
-.alert-center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1050;
-    width: 300px;
-    text-align: center;
-  }
-  
+
+@media (max-width: 400px) {
+    .head-contaner img {
+        height: 150px;
+    }
+
+    .head-contaner .shoes-img {
+        height: 120px;
+        top: 30px;
+        right: 20px;
+    }
+
+    .first-title {
+        top: 40px;
+        left: -100px;
+    }
+
+    .first-title h3 {
+        font-size: 15px;
+    }
+
+    .clock__top-content h4 {
+        font-size: 1rem;
+    }
+
+    .featured-products h2,
+    .logos-section h2 {
+        font-size: 1rem;
+    }
+
+    .logos-section .col a {
+        padding: 10px;
+    }
+
+    .store__btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .alert-center {
+        width: 200px;
+    }
+}
