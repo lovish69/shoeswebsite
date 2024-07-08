@@ -97,7 +97,8 @@ import ShippingInfo from './Explore/ShippingInfo';
 import StorePickup from './Explore/StorePickup';
 import ReturnExchange from './Explore/Return';
 import { CartProvider } from './Components/Pages/CartContext';
-import { WishlistProvider } from './Components/Pages/WishlistContext';
+import { WishlistContext, WishlistProvider } from './Components/Pages/WishlistContext';
+import WishlistComponent from './Components/Pages/WishlistComponent';
 //import { WishlistProvider } from './Components/Pages/WishlistContext'; // Ensure the correct path
 
 function App() {
@@ -123,6 +124,9 @@ function App() {
               <Route path="/shipping-info" element={<ShippingInfo/>}/>
               <Route path="/store-pickup" element={<StorePickup/>}/>
               <Route path="/return-exchange" element={<ReturnExchange/>}/>
+              <Route path="/wishlistcontext" element={<WishlistContext/>}/>
+              <Route path="/wishlistcomponent" element={<WishlistComponent/>}/>
+
             </Route>
           </Routes>
         </BrowserRouter>

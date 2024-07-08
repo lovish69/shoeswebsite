@@ -1,8 +1,5 @@
-
-
-
-import React from 'react';
-import { Container, Navbar, Nav, Carousel, Card, Row, Col, Button } from 'react-bootstrap';
+import React, { useContext, useState } from 'react';
+import { Container, Carousel, Card, Row, Col, Button, Modal, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Home.css';
 import Clock from '../../UI/Clock';
@@ -10,8 +7,38 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faInfoCircle, faShippingFast, faStoreAlt, faExchangeAlt } from '@fortawesome/free-solid-svg-icons';
+import { CartContext } from './CartContext'; // Import CartContext
 
 const Home = () => {
+    const [show, setShow] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
+    const { addToCart, getTotalAmount } = useContext(CartContext); // Get addToCart from CartContext
+
+    const handleClose = () => setShow(false);
+    const handleShow = (product) => {
+        setSelectedProduct(product);
+        setShow(true);
+    };
+
+    const handleAddToCart = (product) => {
+        addToCart(product);
+        setAlertMessage(`${product.title} (${product.price}) added to cart!`);
+        setShowAlert(true);
+        setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
+    };
+
+    const products = [
+        { id: 1, title: "Product 1", description: "This is a brief description of Product 1.", price: "$100", image: "./6.jpg" },
+        { id: 2, title: "Product 2", description: "This is a brief description of Product 2.", price: "$120", image: "./8.jpg" },
+        { id: 3, title: "Product 3", description: "This is a brief description of Product 3.", price: "$150", image: "" },
+        { id: 4, title: "Product 4", description: "This is a brief description of Product 4.", price: "$180", image: "./9.jpg" },
+        { id: 5, title: "Product 5", description: "This is a brief description of Product 5.", price: "$200", image: "./10.jpg" },
+        { id: 6, title: "Product 6", description: "This is a brief description of Product 6.", price: "$250", image: "./11.jpg" }
+        // Add more products as needed
+    ];
+
     return (
         <div>
             <Carousel className='head-contaner'>
@@ -27,7 +54,6 @@ const Home = () => {
                         alt="First slide"
                     />
                     
-                
                     <Carousel.Caption className='first-title'>
                         <h3>Welcome to Footwear Store</h3>
                         <p>Discover the best footwear collection</p>
@@ -36,14 +62,12 @@ const Home = () => {
                 {/* Add more Carousel.Item as needed */}
             </Carousel>
 
-            
             <section className="timer__count">
                 <Container>
                     <Row>
                         <Col lg="6" md="12" className='count__down-col'>
                             <div className="clock__top-content">
                                 <h4 className="text-black fs-3 mb-2">Limited offers Sneakers</h4>
-                                {/* <h3 className="text-black fs-5 mb-3">SNEAKERS</h3> */}
                             </div>
                             <Clock />
 
@@ -64,80 +88,25 @@ const Home = () => {
 
             <Container className="my-5">
                 <h2 className="text-center mb-4">Featured Products</h2>
+                {showAlert && (
+                    <Alert variant="success" className="alert-center">
+                        {alertMessage}
+                    </Alert>
+                )}
                 <Row>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Img variant="top" src="./6.jpg" />
-                            <Card.Body>
-                                <Card.Title>Product 1</Card.Title>
-                                <Card.Text>
-                                    This is a brief description of Product 1.
-                                </Card.Text>
-                                <Button variant="primary">Buy Now</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Img variant="top" src="./8.jpg" />
-                            <Card.Body>
-                                <Card.Title>Product 2</Card.Title>
-                                <Card.Text>
-                                    This is a brief description of Product 2.
-                                </Card.Text>
-                                <Button variant="primary">Buy Now</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Img variant="top" src="2.jpg.jpg" />
-                            <Card.Body>
-                                <Card.Title>Product 3</Card.Title>
-                                <Card.Text>
-                                    This is a brief description of Product 3.
-                                </Card.Text>
-                                <Button variant="primary">Buy Now</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Img variant="top" src="9.jpg" />
-                            <Card.Body>
-                                <Card.Title>Product 4</Card.Title>
-                                <Card.Text>
-                                    This is a brief description of Product 3.
-                                </Card.Text>
-                                <Button variant="primary">Buy Now</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Img variant="top" src="10.jpg" />
-                            <Card.Body>
-                                <Card.Title>Product 5</Card.Title>
-                                <Card.Text>
-                                    This is a brief description of Product 3.
-                                </Card.Text>
-                                <Button variant="primary">Buy Now</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card>
-                            <Card.Img variant="top" src="11.jpg" />
-                            <Card.Body>
-                                <Card.Title>Product 6</Card.Title>
-                                <Card.Text>
-                                    This is a brief description of Product 3.
-                                </Card.Text>
-                                <Button variant="primary">Buy Now</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    {/* Add more Card components for other products */}
+                    {products.map(product => (
+                        <Col md={4} key={product.id}>
+                            <Card>
+                                <Card.Img variant="top" src={product.image} onClick={() => handleShow(product)} />
+                                <Card.Body>
+                                    <Card.Title>{product.title}</Card.Title>
+                                    <Card.Text>{product.description}</Card.Text>
+                                    <Card.Text className="text-muted">{product.price}</Card.Text>
+                                    <Button variant="primary" onClick={() => handleAddToCart(product)}>Buy Now</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
 
@@ -176,6 +145,18 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
+
+            <Modal show={show} onHide={handleClose} size="lg" centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>{selectedProduct?.title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <img src={selectedProduct?.image} alt={selectedProduct?.title} className="w-100" />
+                    <p>{selectedProduct?.description}</p>
+                    <p className="text-muted">{selectedProduct?.price}</p>
+                    <Button variant="primary" onClick={() => handleAddToCart(selectedProduct)}>Add to Cart</Button>
+                </Modal.Body>
+            </Modal>
         </div>
     );
 };

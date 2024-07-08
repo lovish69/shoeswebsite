@@ -1,74 +1,70 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    width: auto;
-    height: 760px;
-    
+    width: 100%;
+    min-height: 100vh;
 }
-.main-box{
-  display: flex;
-  /* background-color: aquamarine; */
-  justify-content: space-around;
-  align-items: center;
 
+.main-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.main-title{
-  display: flex;
-    /* background-color:blueviolet; */
+
+.main-title {
+    display: flex;
     flex-direction: column;
     color: azure;
     flex-wrap: wrap;
-
+    text-align: center;
 }
-.title >p{
+
+.title > p {
     color: brown;
     font-size: 40px;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.pa{
+
+.pa {
     color: white !important;
-
-
 }
-.title-para-and-button{
+
+.title-para-and-button {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 500px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.title-para-and-button p{
-    font-size: 20px
 
+.title-para-and-button p {
+    font-size: 20px;
 }
-/* button{
 
-    color: white;
-    padding: 5px 40px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 25px;
-    transition: background-color 0.3s ease;
-    margin: 0px 40px 20px 0px;
-    font-weight: bolder;
-} */
-.title-button button,.login-signin button,.visit-store button {
+.title-button button, .login-signin button, .visit-store button {
     background: linear-gradient(to right, #6a11cb, #fc2525);
     color: white;
-    padding: 5px 40px;
+    padding: 10px 30px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     transition: background 0.3s ease;
-    margin: 0px 40px 20px 0px;
+    margin: 10px auto;
 }
+
 button:hover {
     background: linear-gradient(to right, #5a0eb7, #1f63e2);
 }
+
 .video-popup {
     position: fixed;
     top: 50%;
@@ -82,9 +78,9 @@ button:hover {
     overflow: auto;
     z-index: 1000; /* Ensure it appears above other content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
-  }
-  
-  .video-overlay {
+}
+
+.video-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -92,5 +88,114 @@ button:hover {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999; /* Ensure the overlay is beneath the video popup */
-  }
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-para-and-button {
+        width: 80%;
+    }
+
+    .main-title {
+        align-items: center;
+    }
+
+    .title > p {
+        font-size: 35px;
+    }
+
+    .title-para-and-button p {
+        font-size: 18px;
+    }
+
+    .title-button button, .login-signin button, .visit-store button {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title > p {
+        font-size: 30px;
+    }
+
+    .title-para-and-button p {
+        font-size: 16px;
+    }
+
+    .title-button button, .login-signin button, .visit-store button {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .main-box {
+        flex-direction: column;
+    }
+
+    .main-title {
+        align-items: center;
+    }
+
+    .title-para-and-button {
+        width: 90%;
+    }
+
+    .title > p {
+        font-size: 25px;
+    }
+
+    .title-para-and-button p {
+        font-size: 15px;
+    }
+
+    .title-button button, .login-signin button, .visit-store button {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title > p {
+        font-size: 22px;
+    }
+
+    .title-para-and-button p {
+        font-size: 14px;
+    }
+
+    .title-button button, .login-signin button, .visit-store button {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .video-popup {
+        padding: 10px;
+    }
+}
+.head-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.head-container .shoes-img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    position: relative; /* Or as needed */
+    top: 0; /* Adjust as needed */
+    right: 0; /* Adjust as needed */
+}
 

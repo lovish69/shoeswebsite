@@ -84,7 +84,9 @@ const Landingpage = () => {
               <div className="title-para-and-button">
                 <p>Step into a World of Comfort and Style with Every Pair</p>
                 <div className="title-button">
-                  <button>Buy Now</button>
+                  <Link to="/home">
+                    <button>Buy Now</button>
+                  </Link>
                   <button>See More...</button>
                   <button onClick={openVideoPopup}>Watch Advertisement</button>
                 </div>
@@ -130,5 +132,3 @@ const Landingpage = () => {
 };
 
 export default Landingpage;
-
-
