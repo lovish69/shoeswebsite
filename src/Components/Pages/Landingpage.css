@@ -6,6 +6,10 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+/* html,body{
+    overflow-x: hidden;
+    overflow-y: visible;
+} */
 
 .main-box {
     display: flex;
@@ -223,5 +227,57 @@ button:hover {
 @media (max-width: 576px) {
     .head-container .shoes-img {
         width: 40%;
+    }
+}
+.no-scroll {
+    overflow: hidden;
+  }
+  
+  /*query of landing page image*/
+
+/* .lpimage{
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+} */
+
+.title-img{
+    max-width: 60%;
+}
+@media (max-width:100%){
+    .lpimage {
+        width: 70%;
+        height: 60%;
+        position: fixed;
+    }
+}
+
+@media (max-width: 80%) {
+    .lpimage {
+        width: 60%;
+        height:55%;
+    }
+}
+
+@media (max-width: 60%) {
+    .lpimage {
+        width: 40%;
+        height: 35%;
+    }
+}
+
+@media (max-width: 40%) {
+    .lpimage {
+        width: 30%;
+        height:25%;
+    }
+}
+
+@media (max-width: 20%) {
+    .lpimage {
+        width: 15%;
+        height:10%;
     }
 }

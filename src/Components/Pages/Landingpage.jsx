@@ -101,8 +101,8 @@ const Landingpage = () => {
               </motion.button>
             </div>
           </div>
-          <div className="title-image">
-            <img src='./shoes.png' style={{ height: "600px", position: 'relative', top: "35px" }} alt='not find' />
+          <div className="title-image lpimage">
+            <img src='./shoes.png' style={{ width:"100%",height: "100%", position: 'relative', top: "35px" }} alt='not find' />
           </div>
         </div>
       </body>

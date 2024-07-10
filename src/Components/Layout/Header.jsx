@@ -87,22 +87,30 @@
 // export default Header;
 
 // src/Header.js
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import Carticon from '../Pages/Carticon';
 import LoginIcon from '../Pages/LoginIcon';
 import { WishlistContext } from '../Pages/WishlistContext';
-//import { WishlistContext } from './WishlistContext'; // Import WishlistContext
 
-const Header = () => {
-  const { wishlist } = useContext(WishlistContext); // Use WishlistContext
+const Header = ({ onSearch }) => {
+  const { wishlist } = useContext(WishlistContext);
+  const [searchInput, setSearchInput] = useState('');
+
+  const handleSearchInputChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const handleSearch = () => {
+    onSearch(searchInput);
+  };
 
   return (
     <>
       <header className="header">
         <div className="header__logo">
-          <img src='./logo.png' style={{height: "80px"}} alt="Logo" />
+          <img src='./logo.png' style={{ height: '80px' }} alt="Logo" />
           <a href="/">SOLE SNEAKERS</a>
         </div>
         <nav className="header__nav">
@@ -114,16 +122,21 @@ const Header = () => {
           </ul>
         </nav>
         <div className="header__search">
-          <input type="text" placeholder="Search..." />
-          <button type="submit">Search</button>
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchInput}
+            onChange={handleSearchInputChange}
+          />
+          <button type="submit" onClick={handleSearch}>Search</button>
         </div>
         <div className="header__icons">
           <Link to="/wishlist" className="header__wishlist">
             <i className="fas fa-heart"></i>
             {wishlist.length > 0 && <span className="wishlist-count">{wishlist.length}</span>}
           </Link>
-          <Carticon/>
-          <LoginIcon/>
+          <Carticon />
+          <LoginIcon />
         </div>
       </header>
     </>
