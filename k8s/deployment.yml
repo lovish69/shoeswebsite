@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-shoeswebsite
+  labels:
+    app: shoeswebsite
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shoeswebsite
+  template:
+    metadata:
+      labels:
+        app: shoeswebsite
+    spec:
+      containers:
+        - name: shoeswebsite
+          image: lovish56456/go-web:06
+          ports:
+            - containerPort: 80
+          
