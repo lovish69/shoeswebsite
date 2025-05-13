@@ -80,7 +80,7 @@ const Landingpage = () => {
           <div className="main-title">
             <div className="title">
               <p>Welcome to</p>
-              <p className='pa'>Sole Sneakers</p>
+              <p className='pa'>Sole Sneaker</p>
               <div className="title-para-and-button">
                 <p>Step into a World of Comfort and Style with Every Pair</p>
                 <div className="title-button">
