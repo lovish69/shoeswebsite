@@ -143,7 +143,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
 
 ### Create Github action file
 - Create .github/workflows folder.
-- The name of folder should be same otherwise it will not work
+- The folder name must be exactly .github/workflows, or GitHub Actions won’t recognize it.
 
 ![pipeline](https://github.com/user-attachments/assets/e64466d5-0e8d-405f-a43b-edc9ccc1bec9)
 
