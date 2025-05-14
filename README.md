@@ -1,4 +1,4 @@
-# 🚀 DevOps CI/CD Pipeline with GitHub Actions, Docker, Helm, and Argo CD
+# 🚀 DevOps CI/CD Pipeline with GitHub Actions, Kubernetes , Docker, Helm, and Argo CD
 
 
 This project sets up a complete CI/CD pipeline using GitHub Actions, Docker, Helm, and Argo CD to automate building, testing, packaging, and deploying applications to a Kubernetes cluster using GitOps practices.
